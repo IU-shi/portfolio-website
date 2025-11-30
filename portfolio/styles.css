@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #F3EEE9;
+    color: #222;
+    line-height: 1.6;
+    padding-bottom: 50px;
+}
+
+/* HEADER */
+header {
+    background-color: #C4737C;
+    padding: 15px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 800;
+    margin-left: 15px;
+}
+
+nav a:hover {
+    color: #E1D3CA;
+}
+
+.logo {
+    height: 35px;
+    margin-right: 2px;
+    vertical-align: middle;
+    border-radius: 50%;
+}
+
+/* ABOUT SECTION */
+#about-section {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.headshot {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 20px auto;
+}
+
+.headshot img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    border-radius: 50%;
+    border: 4px solid transparent;
+}
+
+.headshot img:hover {
+    transform: scale(1.12);
+    box-shadow: 0 0 35px 8px #C4737C;
+    border-color: #C4737C;
+}
+
+.bio {
+    max-width: 600px;
+    margin: 20px auto;
+    font-size: 1rem;
+}
+
+/* SOCIAL ICONS */
+.social-links i {
+    font-size: 30px;
+    margin: 10px;
+    color: #2e192c;
+    transition: 0.3s;
+}
+
+.social-links i:hover {
+    color: #C4737C;
+    transform: scale(1.2);
+}
+
+/* SKILLS */
+#skills-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+}
+
+.skills-container i {
+    font-size: 40px;
+    color: #2e192c;
+    margin-bottom: 8px;
+}
+
+.skills-container a {
+    font-size: 20px;
+    display: block;
+    margin-bottom: 30px;
+}
+
+/* DIVIDER */
+.divider {
+    width: 80%;
+    height: 2px;
+    background: #e0e0e0;
+    margin: 40px auto;
+}
+
+/* LEAVE MESSAGE */
+#leave-message-section {
+    text-align: center;
+    padding: 40px 20px;
+    font-size: 1.2rem;
+}
+
+/* RESPONSIVE NAV */
+@media(max-width: 600px) {
+    nav {
+        flex-direction: column;
+        gap: 10px;
+        padding: 15px 0;
+    }
+
+    nav .right a {
+        margin: 0 10px;
+    }
+}
